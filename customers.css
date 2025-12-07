@@ -1,0 +1,472 @@
+.customers-container > form button {
+    background-color: #6d4c41;
+    color: #fff8f0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: none;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+.customers-container > form button:hover {
+    background-color: #5d4037;
+}
+.customers-container .edit-btn,
+.customers-container a.edit-btn,
+.customers-container .delete-btn,
+.customers-container a.delete-btn {
+    background-color: #6d4c41;
+    color: #fff8f0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    min-width: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    margin: 0;
+}
+.customers-container .edit-btn:hover,
+.customers-container a.edit-btn:hover {
+    background-color: #5d4037;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.customers-container .delete-btn,
+.customers-container a.delete-btn {
+    background-color: #d32f2f;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.customers-container .delete-btn:hover,
+.customers-container a.delete-btn:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Action cell layout: align Edit/Delete on the right and center vertically */
+.customers-container td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    white-space: nowrap;
+    padding-right: 12px;
+}
+
+/* Make buttons use inline-flex for consistent centering */
+.customers-container .edit-btn,
+.customers-container a.edit-btn,
+.customers-container .delete-btn,
+.customers-container a.delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure inline table forms remain unstyled and don't add spacing */
+.customers-container table form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.customers-container .cancel-btn {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #5d4037;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding: 0;
+}
+.customers-container .cancel-btn:hover {
+    color: #3e2723;
+}
+.customers-container {
+    max-width: 960px;
+    width: 95%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff8f0;
+    border-radius: 12px;
+    border: 1px solid #8d6e63;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.customers-container input[type="text"],
+.customers-container input[type="email"],
+.customers-container input[type="password"],
+.customers-container input[type="number"],
+.customers-container textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #8d6e63;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fff8f0;
+    color: #3e2723;
+    box-sizing: border-box;
+    font-family: inherit;
+    margin-bottom: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.customers-container input[type="text"]:focus,
+.customers-container input[type="email"]:focus,
+.customers-container input[type="password"]:focus,
+.customers-container input[type="number"]:focus,
+.customers-container textarea:focus {
+    outline: none;
+    border-color: #6d4c41;
+    box-shadow: 0 0 8px rgba(101, 67, 33, 0.15);
+}
+
+.customers-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.customers-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3e2723;
+    font-weight: 600;
+}
+
+.form-box {
+    background: #f1e7de;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    border: 1px solid #8d6e63;
+    box-shadow: 0 4px 15px rgba(101, 67, 33, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(101, 67, 33, 0.15);
+}
+
+.form-box h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5d4037;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+ .customers-container > form:last-of-type button[name="add_customer"] {
+    display: block;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+ .customers-container > form button[name="edit_customer"] {
+    display: block;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+ .customers-container > form {
+    background: #f1e7de;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    border: 1px solid #8d6e63;
+    box-shadow: 0 4px 15px rgba(101, 67, 33, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ .customers-container > form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(101, 67, 33, 0.15);
+}
+
+ .customers-container > form h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5d4037;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.form-box input:focus {
+    border-color: #6d4c41;
+    box-shadow: 0 0 8px rgba(101, 67, 33, 0.4);
+    outline: none;
+}
+
+.cancel-btn {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #5d4037;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.cancel-btn:hover {
+    color: #3e2723;
+}
+
+.table-box {
+    overflow-x: auto;
+}
+
+.table-box tr:hover {
+    background-color: #f1e7de;
+    transform: translateX(2px);
+}
+
+/* Ensure inline forms inside the table (delete forms) don't inherit container styles */
+.customers-container table form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Normalize Edit/Delete button sizes so they match */
+.customers-container .edit-btn,
+.customers-container a.edit-btn,
+.customers-container .delete-btn,
+.customers-container a.delete-btn,
+.customers-container button.delete-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 1;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Remove extra top offset from delete buttons (if any) */
+.customers-container .delete-btn,
+.customers-container a.delete-btn {
+    margin-top: 0;
+}
+
+.order-details-container {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff8f0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    border: 1px solid #d7ccc8;
+    transition: all 0.3s;
+}
+
+.order-details-container:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.order-details-container h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #3e2723;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.order-info {
+    background: #f1e7de;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    border: 1px solid #8d6e63;
+    box-shadow: 0 4px 15px rgba(101, 67, 33, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(101, 67, 33, 0.15);
+}
+
+.order-info p {
+    margin: 10px 0;
+    color: #5d4037;
+    font-size: 16px;
+}
+
+.order-items-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff8f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.order-items-table th,
+.order-items-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #d7ccc8;
+    color: #3e2723;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.order-items-table th {
+    background-color: #ac8679;
+    color: #fff8f0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.order-items-table tr:hover {
+    background-color: #f1e7de;
+    transform: translateX(2px);
+}
+
+.order-items-table tfoot td {
+    font-weight: 700;
+    font-size: 16px;
+    color: #3e2723;
+}
+
+.back-orders-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 26px;
+    background: linear-gradient(135deg, #95d89a, #6dcb6d);
+    color: #fff8f0;
+    font-weight: 700;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(101, 67, 33, 0.2);
+}
+
+.back-orders-btn:hover {
+    background: linear-gradient(135deg, #7cc17c, #5ba75a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(101, 67, 33, 0.3);
+}
+
+
+.customers-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff8f0;
+}
+
+.customers-container table,
+.customers-container th,
+.customers-container td {
+    border: 1px solid #8d6e63;
+}
+
+.customers-container th,
+.customers-container td {
+    padding: 12px;
+    text-align: left;
+    color: #3e2723;
+    font-size: 15px;
+}
+
+.customers-container th {
+    background-color: #ac8679;
+    color: #fff8f0;
+    font-weight: 700;
+}
+
+.customers-container tr:hover {
+    background-color: #f1e7de;
+}
+
+.customers-container a.edit-btn {
+    background-color: #6d4c41;
+    color: #fff8f0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.customers-container a.edit-btn:hover {
+    background-color: #5d3a30;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.customers-container a.delete-btn {
+    background-color: #d32f2f;
+    color: #fff8f0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-left: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.customers-container a.delete-btn:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flash {
+    max-width: 900px;
+    margin: 0 auto 18px auto;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+.flash.success {
+    background-color: #e8f6ea;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+.flash.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+
